@@ -211,11 +211,39 @@ var j = 0;
 
 }
 
+
+void functionsLearn (){
+
+  void addTwoNumber(){
+    var x = 1;
+    var y = 3;
+    print(x + y);
+  }
+  addTwoNumber();
+
+  void addTwoNumber2(int x, double y){
+    print(x+y);
+  }
+
+  addTwoNumber2(3, 4.39);
+
+
+  // Return function
+  double addTwoNumber3(double x, int y){
+    return x + y;
+  }
+  print(addTwoNumber3(10.99, 30));
+  print(addTwoNumber3(10.99, 30)+3);
+
+
+}
+
 void main() {
 
   // basic();
   // condition();
-  loopFun();
+  // loopFun();
+  functionsLearn();
 
 
 }
