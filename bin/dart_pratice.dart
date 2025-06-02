@@ -192,6 +192,23 @@ void loopFun(){
     print(item);
   }
 
+
+  // While loop
+  var i = 0;
+  while(i<5){
+    print("While loop: ${i.toString()}");
+
+    i++;
+  }
+
+//   Do while loop
+var j = 0;
+  do{
+    print("This is do-while loop: ${j.toString()}");
+
+    j++;
+  }while(j < 5);
+
 }
 
 void main() {
