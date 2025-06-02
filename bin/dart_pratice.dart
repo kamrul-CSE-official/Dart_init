@@ -1,5 +1,4 @@
-void main() {
-
+void basic(){
   print("Bismillah");
 
   var x = 10;
@@ -14,7 +13,7 @@ void main() {
   var isBangladeshi = true;
 
   print(isBangladeshi);
-  
+
   var city = ['Dhaka', 'Chattogram', 'Khulna', 'Barisal', 12, 14.4, true];
   print(city);
   print(city[4]);
@@ -80,26 +79,26 @@ void main() {
 
 //   SET
 
-var countries = <String>{"Bangladesh", "India", "Pakistan", "China"};
-countries.add("Nepal");
-countries.addAll({"USA", "Dhaka"});
-var d = countries.elementAt(5);
-print(d);
+  var countries = <String>{"Bangladesh", "India", "Pakistan", "China"};
+  countries.add("Nepal");
+  countries.addAll({"USA", "Dhaka"});
+  var d = countries.elementAt(5);
+  print(d);
 // countries.clear();
-print(countries);
+  print(countries);
 
 
 
 // Map
 
-var person = {
-  'name': "Tom",
-  'age': 23,
-  'city': 'Dhaka'
-};
+  var person = {
+    'name': "Tom",
+    'age': 23,
+    'city': 'Dhaka'
+  };
 
-person['country'] = "Bangladesh";
-print(person);
+  person['country'] = "Bangladesh";
+  print(person);
 
 
   var thisIsMap = new Map();
@@ -113,6 +112,95 @@ print(person);
   print(thisIsMap.length);
   print(thisIsMap.isNotEmpty);
   print(thisIsMap.isEmpty);
+}
+
+void condition() {
+  var marks = 80;
+  // IF Else conditions
+  if(marks >= 80){
+    print("Result is A+");
+  }else if(marks < 80 && marks >= 70){
+    print("Result is A");
+  }else if(marks < 70 && marks >= 60){
+    print("Result is B+");
+  }else if(marks < 60 && marks >= 50){
+    print("result is B");
+  }else if(marks < 50 && marks >= 39){
+    print("Result is C");
+  }else{
+    print("Result is F");
+  }
+
+//   Switch case statement
+
+switch(marks){
+  case 80:
+    print("Result is A+");
+    break;
+  case 70:
+    print("Result is A");
+    break;
+  case 60:
+    print("Result is B+");
+    break;
+  case 50:
+    print("Result is B");
+    break;
+  case 40:
+    print("result is C");
+  default:
+    print("Result is not found!");
+    break;
+}
+
+
 
 
 }
+
+void loopFun(){
+
+  /*
+  for(var i=0; i<=3; i=i+3){
+    print("Dart: " +i.toString());
+  }
+   */
+
+  // List + Loop
+  var alphabetList = ['A', 'B', 'C', 'D', 'E', 'F'];
+
+  for (var oneAlphabet in alphabetList) {
+    print("List loop: "+oneAlphabet);
+  }
+
+  // Set + Loop
+  var setAlphabetList = {'A', 'B', 'C' };
+  for (var oneAlphabet in setAlphabetList){
+    print("Set loop: "+oneAlphabet);
+  }
+
+  // Map + loop
+  var productsList = [
+    {'name': 'Soap', 'price': 100},
+    {'name': 'Milk', 'price': 110},
+    {'name': 'Fish', 'price': 450}
+  ];
+
+  print("Map Loop");
+  for (var oneProduct in productsList){
+    var item = "Product name is ${oneProduct['name']} & price is ${oneProduct['price']}";
+    print(item);
+  }
+
+}
+
+void main() {
+
+  // basic();
+  // condition();
+  loopFun();
+
+
+}
+
+
