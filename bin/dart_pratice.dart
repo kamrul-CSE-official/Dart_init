@@ -238,12 +238,26 @@ void functionsLearn (){
 
 }
 
+
+
+class MyClass{
+
+  var MyName = "MD.Kamrul Hasan";
+  var Alphabet = ['A', 'B', 'C'];
+
+
+
+}
+void classLearn(){
+
+}
 void main() {
 
   // basic();
   // condition();
   // loopFun();
-  functionsLearn();
+  // functionsLearn();
+  classLearn();
 
 
 }
