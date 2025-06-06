@@ -1,4 +1,7 @@
 import 'MyClass.dart';
+import 'Father.dart';
+import 'Son.dart';
+
 
 void basic(){
   print("Bismillah");
@@ -259,22 +262,6 @@ void classLearn(){
 }
 
 
-class Father{
-  baperTotalTaka(){
-    print("Total amount: 500000");
-  }
-}
-
-class Son extends Father{
-  @override
-  baperTotalTaka() {
-    print("Total amount: 800000");
-  }
-
-}
-
-
-
 void main() {
 
   // basic();
@@ -287,8 +274,9 @@ void main() {
   var sonObj = Son();
   sonObj.baperTotalTaka();
 
-  var fatherObj = Father();
-  fatherObj.baperTotalTaka();
+  // Abstract class এর obj ক্রিয়েট করা যাবে না। অর্থাৎ আমারা যদি চাই কোন ক্লাস এর আর অবজেক্ট ক্রিয়েট করতে দিব না তা হলে এটি করতে পারে।
+  // var fatherObj = Father();
+  // fatherObj.baperTotalTaka();
 
 
 }
