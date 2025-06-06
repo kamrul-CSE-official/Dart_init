@@ -1,3 +1,5 @@
+import 'MyClass.dart';
+
 void basic(){
   print("Bismillah");
 
@@ -240,15 +242,16 @@ void functionsLearn (){
 
 
 
-class MyClass{
 
-  var MyName = "MD.Kamrul Hasan";
-  var Alphabet = ['A', 'B', 'C'];
-
-
-
-}
 void classLearn(){
+  // var obj = new MyClass();
+  var obj = MyClass();
+
+  obj.addTwoNumber(20, 30);
+  obj.addThreeNumber(5, 6, 1);
+
+  print(obj.MyName);
+  print(obj.Alphabet[0]);
 
 }
 void main() {
