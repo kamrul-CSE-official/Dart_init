@@ -241,8 +241,6 @@ void functionsLearn (){
 }
 
 
-
-
 void classLearn(){
   // var obj = new MyClass();
   var obj = MyClass("This mess from function!");
@@ -259,6 +257,20 @@ void classLearn(){
   obj.nuvs();
 
 }
+
+
+class Father{
+  baperTotalTaka(){
+    print("Total amount: 500000");
+  }
+}
+
+class Son extends Father{
+
+}
+
+
+
 void main() {
 
   // basic();
@@ -266,6 +278,13 @@ void main() {
   // loopFun();
   // functionsLearn();
   classLearn();
+
+
+  var sonObj = Son();
+  sonObj.baperTotalTaka();
+
+  var fatherObj = Father();
+  fatherObj.baperTotalTaka();
 
 
 }
