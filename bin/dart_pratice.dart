@@ -245,10 +245,13 @@ void functionsLearn (){
 
 void classLearn(){
   // var obj = new MyClass();
-  var obj = MyClass();
+  var obj = MyClass("This mess from function!");
 
   obj.addTwoNumber(20, 30);
   obj.addThreeNumber(5, 6, 1);
+
+  // এটা সরাসরি ক্লাস থেকে একসেস নিচ্ছ কারন ক্লাসে static কী-ওয়াড নিচ্ছে।
+  MyClass.addForeNumber(100, 200, 300);
 
   print(obj.MyName);
   print(obj.Alphabet[0]);
