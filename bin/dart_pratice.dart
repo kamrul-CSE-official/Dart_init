@@ -270,6 +270,7 @@ void main() {
   // functionsLearn();
   classLearn();
 
+  var x = 10;
 
   var sonObj = Son();
   sonObj.baperTotalTaka();
