@@ -22,7 +22,7 @@ void basic(){
   print(city.length);
 
   var stuednts = {
-    'name': "Kamrul",
+    'name': "KamrulHasan",
     'age': 27,
     'Department': 'CSE',
     'Branch': '20th'
@@ -255,6 +255,8 @@ void classLearn(){
 
   print(obj.MyName);
   print(obj.Alphabet[0]);
+
+  obj.nuvs();
 
 }
 void main() {

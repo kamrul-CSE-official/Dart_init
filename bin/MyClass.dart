@@ -18,7 +18,15 @@ class MyClass{
   // এটি একটি constructor function. এটি obj তৌরির সাথে সাথে কল হই যাই।
   // constructor fun এর নাম ক্লাসের নামের মোত হতে হবে, এবং কোন কিছু রিটার্ন করবে না।
   MyClass(String mess){
-    print("I am a constructor: "+ mess);
+    print("I am a constructor: $mess");
+  }
+
+  var nav1 = 10;
+  var nav2 = 20;
+
+  void nuvs(){
+    var res = this.nav1 + this.nav2;
+    print(res);
   }
 
 }
